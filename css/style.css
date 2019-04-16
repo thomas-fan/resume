@@ -7,6 +7,10 @@ body {
 h1, h2, h3, h4, h5, p {
   margin: 0;
   padding: 0;
+  font-weight: normal;
+}
+ul,ol {
+  list-style: none;
 }
 
 hr {
@@ -226,4 +230,55 @@ main .description {
   font-family: kai;
   line-height: 1.8;
   font-size: 18px;
+}
+
+.skills {
+  max-width: 940px;
+  margin: 20px auto 0;
+  color: #3d4451;
+}
+
+.skills h2 {
+  text-align: center;
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.skills ol {
+  background: #fff;
+  box-shadow: 0 4px 13px 0 rgba(0, 0, 0, 0.5);
+  margin: 42px 50px 10px;
+}
+
+.skills ol li {
+  float: left;
+  width: 48%;
+  margin-top: 40px;
+  box-sizing: border-box;
+  padding-right: 40px;
+}
+
+.skills ol li:nth-child(even) {
+  float: right;
+}
+
+.skills ol h3 {
+  font-size: 14px;
+  line-height: 1.1;
+  padding-right: 40px;
+}
+
+.skills .progress-bar {
+  height: 5px;
+  background: #fbe1e2;
+  border-radius: 2px;
+  margin: 4px 0 30px;
+}
+
+.skills .progress {
+  height: 100%;
+  background: #e8676b;
+  width: 70%;
+  border-radius: 2px;
 }
