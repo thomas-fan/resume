@@ -9,7 +9,8 @@ h1, h2, h3, h4, h5, p {
   padding: 0;
   font-weight: normal;
 }
-ul,ol {
+
+ul, ol {
   list-style: none;
 }
 
@@ -232,12 +233,13 @@ main .description {
   font-size: 18px;
 }
 
-.skills {
+.skills, .portfolio {
   max-width: 940px;
   margin: 20px auto 0;
   color: #3d4451;
 }
 
+.portfolio h2,
 .skills h2 {
   text-align: center;
   font-size: 34px;
@@ -281,4 +283,89 @@ main .description {
   background: #e8676b;
   width: 70%;
   border-radius: 2px;
+}
+
+.portfolio {
+  text-align: center;
+}
+
+
+.portfolio nav {
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+  margin-top: 32px;
+}
+
+.portfolio nav .bar {
+  height: 5px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+.portfolio nav .bar .bar-inner {
+  height: 100%;
+  background: #e06567;
+  width: 20%;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+.portfolio nav .bar.state-1 .bar-inner {
+  margin-left: 0;
+  width: 34px;
+
+}
+
+.portfolio nav .bar.state-2 .bar-inner {
+  margin-left: 65px;
+  width: 44px;
+
+}
+
+.portfolio nav .bar.state-3 .bar-inner {
+  margin-left: 144px;
+  width: 104px;
+
+}
+
+.portfolio nav ol {
+  margin: 0 auto;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+}
+
+.portfolio nav ol li {
+  float: left;
+  margin-left: 40px;
+}
+
+.portfolio nav ol li:nth-child(1) {
+  margin-left: 0;
+}
+section.portfolio .works {
+  position: relative;
+}
+section.portfolio .works > .big,
+section.portfolio .works > .small{
+  position: absolute;
+}
+section.portfolio .works > .big {
+  width: 606px;
+  height: 586px;
+}
+
+section.portfolio .works > .small {
+  width: 293px;
+  height: 278px;
+}
+
+section.portfolio .works > .big img,
+section.portfolio .works > .small img {
+  width: auto;
+  height: auto;
+  max-width:100%;
+  max-height:100%;
 }
